@@ -15,7 +15,9 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Please enter a valid email address." }, { status: 400 });
     }
 
-    if (!process.env.RESEND_API_KEY || !process.env.CONTACT_TO_EMAIL) {
+    const contactToEmail = process.env.CONTACT_TO_EMAIL ?? "dev.amaan690@gmail.com";
+
+    if (!process.env.RESEND_API_KEY || !contactToEmail) {
       return NextResponse.json({ success: true, message: "Message validated. Configure Resend to deliver it to your inbox." });
     }
 
@@ -24,7 +26,7 @@ export async function POST(request: Request) {
       headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, "Content-Type": "application/json" },
       body: JSON.stringify({
         from: process.env.CONTACT_FROM_EMAIL ?? "portfolio@example.com",
-        to: [process.env.CONTACT_TO_EMAIL],
+        to: [contactToEmail],
         reply_to: email,
         subject: `Portfolio enquiry from ${name}`,
         text: `Name: ${name}\nEmail: ${email}\n\n${message}`,

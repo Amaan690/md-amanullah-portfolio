@@ -5,10 +5,10 @@ export const profile = {
   role: "AI/ML Engineer & Software Engineer",
   eyebrow: "Building reliable systems for the intelligence layer",
   intro:
-    "I build production software and evaluate the models shaping how people use it. My work sits at the intersection of full-stack engineering, generative AI, and rigorous technical validation.",
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "",
-  github: process.env.NEXT_PUBLIC_GITHUB_URL ?? "",
-  linkedin: process.env.NEXT_PUBLIC_LINKEDIN_URL ?? "",
+    "I design dependable software systems, AI workflows, and production-ready product experiences that balance speed, reliability, and real user value.",
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "dev.amaan690@gmail.com",
+  github: process.env.NEXT_PUBLIC_GITHUB_URL ?? "https://github.com/Amaan690",
+  linkedin: process.env.NEXT_PUBLIC_LINKEDIN_URL ?? "https://www.linkedin.com/in/md-amanullah-",
 };
 
 export const metrics = [
@@ -153,12 +153,13 @@ export const projects = [
   { name: "AI / LLM Response Validation System", category: "AI/ML" as ProjectCategory, number: "01", description: "A structured workflow for validating AI responses against requirements, technical correctness and edge cases.", stack: ["Python", "LLMs", "Evaluation"], features: ["Requirement checks", "Technical review", "Reliability feedback"] },
   { name: "AI Chatbot", category: "AI/ML" as ProjectCategory, number: "02", description: "Conversational AI product experience with a focus on useful, dependable responses.", stack: ["Python", "LangChain", "APIs"], features: ["Context-aware chat", "Prompt workflows", "Response validation"] },
   { name: "AI Voice Assistant", category: "AI/ML" as ProjectCategory, number: "03", description: "Voice-first assistant concept connecting natural language interaction to software actions.", stack: ["Python", "Generative AI", "APIs"], features: ["Voice interaction", "Intent handling", "Automation"] },
-  { name: "Online Interview Platform", category: "Full Stack" as ProjectCategory, number: "04", description: "Full-stack interview workflow with authentication, backend APIs and database integration.", stack: ["React.js", "Node.js", "MySQL"], features: ["Interview workflows", "Authentication", "Database integration"] },
-  { name: "Solar Energy Company Website", category: "Web" as ProjectCategory, number: "05", description: "A polished company website built from reusable components for a solar energy business.", stack: ["Next.js", "Tailwind CSS", "JavaScript"], features: ["Responsive layout", "Reusable UI", "Performance-minded build"] },
-  { name: "Elitas Appliances Product Showcase", category: "Web" as ProjectCategory, number: "06", description: "Product-focused web experience for presenting appliances with clarity and strong visual hierarchy.", stack: ["React.js", "JavaScript", "CSS"], features: ["Product presentation", "Responsive UI", "Clear navigation"] },
-  { name: "Oasis Water Cooler Website", category: "Web" as ProjectCategory, number: "07", description: "Brand website for a water cooler business with a focused, conversion-ready product experience.", stack: ["React.js", "Tailwind CSS", "JavaScript"], features: ["Product pages", "Responsive design", "Reusable components"] },
-  { name: "Excel-to-Dashboard Generative AI Automation", category: "Backend" as ProjectCategory, number: "08", description: "Automation workflow that turns Excel-based stock data into dynamic dashboards with less manual effort.", stack: ["Python", "Generative AI", "Dashboards"], features: ["Data transformation", "Dashboard generation", "Manual effort reduction"] },
-  { name: "EKART E-commerce Platform", category: "Full Stack" as ProjectCategory, number: "09", description: "E-commerce platform concept with product discovery and transactional workflow foundations.", stack: ["React.js", "Node.js", "MongoDB"], features: ["Product browsing", "API integration", "Data persistence"] },
+  { name: "NextZensoftwaresolution", category: "Full Stack" as ProjectCategory, number: "04", description: "A product and service website concept for a software solutions company, focused on clarity, trust, and conversion-ready business positioning.", stack: ["Next.js", "TypeScript", "Tailwind CSS"], features: ["Business presentation", "Service clarity", "Scalable branding"] },
+  { name: "Online Interview Platform", category: "Full Stack" as ProjectCategory, number: "05", description: "Full-stack interview workflow with authentication, backend APIs and database integration.", stack: ["React.js", "Node.js", "MySQL"], features: ["Interview workflows", "Authentication", "Database integration"] },
+  { name: "Solar Energy Company Website", category: "Web" as ProjectCategory, number: "06", description: "A polished company website built from reusable components for a solar energy business.", stack: ["Next.js", "Tailwind CSS", "JavaScript"], features: ["Responsive layout", "Reusable UI", "Performance-minded build"] },
+  { name: "Elitas Appliances Product Showcase", category: "Web" as ProjectCategory, number: "07", description: "Product-focused web experience for presenting appliances with clarity and strong visual hierarchy.", stack: ["React.js", "JavaScript", "CSS"], features: ["Product presentation", "Responsive UI", "Clear navigation"] },
+  { name: "Oasis Water Cooler Website", category: "Web" as ProjectCategory, number: "08", description: "Brand website for a water cooler business with a focused, conversion-ready product experience.", stack: ["React.js", "Tailwind CSS", "JavaScript"], features: ["Product pages", "Responsive design", "Reusable components"] },
+  { name: "Excel-to-Dashboard Generative AI Automation", category: "Backend" as ProjectCategory, number: "09", description: "Automation workflow that turns Excel-based stock data into dynamic dashboards with less manual effort.", stack: ["Python", "Generative AI", "Dashboards"], features: ["Data transformation", "Dashboard generation", "Manual effort reduction"] },
+  { name: "EKART E-commerce Platform", category: "Full Stack" as ProjectCategory, number: "10", description: "E-commerce platform concept with product discovery and transactional workflow foundations.", stack: ["React.js", "Node.js", "MongoDB"], features: ["Product browsing", "API integration", "Data persistence"] },
   { name: "Online Hotel Booking Platform", category: "Full Stack" as ProjectCategory, number: "10", description: "Booking experience designed around browsing, selection and a straightforward reservation flow.", stack: ["JavaScript", "REST APIs", "Database"], features: ["Search flow", "Booking workflow", "Responsive UI"] },
 ];
 

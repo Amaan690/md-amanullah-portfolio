@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { profile } from "@/data/portfolio";
 
 const navItems = [
-  ["About", "#about"], ["Experience", "#experience"], ["AI platforms", "#platforms"], ["Projects", "#projects"], ["Contact", "#contact"],
+  ["About", "#about"], ["Experience", "#experience"], ["Education", "#education"], ["AI platforms", "#platforms"], ["Projects", "#projects"], ["Contact", "#contact"],
 ];
 
 export function SiteHeader() {
