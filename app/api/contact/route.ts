@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     const contactToEmail = process.env.CONTACT_TO_EMAIL ?? "dev.amaan690@gmail.com";
 
     if (!process.env.RESEND_API_KEY || !contactToEmail) {
-      return NextResponse.json({ success: true, message: "Message validated. Configure Resend to deliver it to your inbox." });
+      return NextResponse.json({ error: "Email delivery is not configured yet. Please contact dev.amaan690@gmail.com directly." }, { status: 503 });
     }
 
     const delivery = await fetch("https://api.resend.com/emails", {
