@@ -40,7 +40,7 @@ export function ContactSection() {
       }
     } catch {
       setStatus("error");
-      setStatusMessage("The contact service is unavailable. Please email me directly.");
+      setStatusMessage("The contact service is unavailable. You can reach out directly.");
     }
   }
 
