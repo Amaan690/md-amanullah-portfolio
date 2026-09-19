@@ -14,6 +14,7 @@ export function ContactSection() {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
     setStatus("sending");
     setStatusMessage("");
     setFallbackUrl("");
@@ -22,14 +23,14 @@ export function ContactSection() {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(new FormData(event.currentTarget).entries())),
+        body: JSON.stringify(Object.fromEntries(new FormData(form).entries())),
       });
       const data = await response.json() as ContactResponse;
 
       if (response.ok) {
         setStatus("success");
         setStatusMessage(data.message ?? "Thanks. Your note has been sent.");
-        event.currentTarget.reset();
+        form.reset();
       } else if (data.fallbackUrl) {
         setStatus("fallback");
         setStatusMessage(data.error ?? "Open your email app to finish sending your message.");
