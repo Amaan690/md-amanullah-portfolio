@@ -128,17 +128,17 @@ export const platforms = [
     accent: "pink",
     summary: "Video annotation and content review work contributing to AI training datasets.",
     details: ["Support video annotation and content review workflows for dataset development."],
-    skills: ["Video annotation", "Content review", "Data quality"],
+    skills: ["Video annotation", "Content review", "Data quality", "AI training data", "Video Annotation"],
   },
   {
     name: "Micro1",
     mark: "M1",
     project: "Robotics-focused data work",
-    role: "AI/computer vision contributor",
+    role: "AI/computer vision contributor And reviewer",
     accent: "yellow",
     summary: "Robotics-focused image and video processing or annotation work.",
     details: ["Support dataset quality and AI/computer vision workflows around image and video data."],
-    skills: ["Image processing", "Video processing", "Dataset quality"],
+    skills: ["Image processing","Video processing", "Dataset quality"],
   },
 ];
 
