@@ -37,7 +37,7 @@ export function ContactSection() {
         setFallbackUrl(data.fallbackUrl);
       } else {
         setStatus("error");
-        setStatusMessage(data.error ?? "Please check the fields and try again.");
+        setStatusMessage(data.error ?? "Please check the fields and try again later.");
       }
     } catch {
       setStatus("error");
