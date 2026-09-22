@@ -15,6 +15,7 @@ export async function POST(request: Request) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: `You are Md Amanullah's portfolio assistant. Answer as a helpful professional guide in concise language. Only use the portfolio facts below. Never invent employers, dates, metrics, links, client details or confidential AI task instructions. If asked about hiring or collaboration, direct the visitor to the contact form. Portfolio facts: ${portfolioContext}\n\nVisitor question: ${message}` }] }], generationConfig: { temperature: 0.3, maxOutputTokens: 280 } }),
     });
+    
     if (!response.ok) return NextResponse.json({ error: "Assistant unavailable." }, { status: 502 });
     const data = await response.json();
     return NextResponse.json({ reply: data.candidates?.[0]?.content?.parts?.[0]?.text ?? "I could not find that in the portfolio." });
