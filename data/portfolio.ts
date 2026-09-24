@@ -133,7 +133,7 @@ export const platforms = [
   {
     name: "Micro1",
     mark: "M1",
-    project: "Robotics-focused data work",
+    project: "Robotics-focused data work for AI and computer vision",
     role: "AI/computer vision contributor And reviewer",
     accent: "yellow",
     summary: "Robotics-focused image and video processing or annotation work.",
