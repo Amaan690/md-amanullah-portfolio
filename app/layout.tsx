@@ -9,7 +9,11 @@ export const metadata: Metadata = {
   title: "Md Amanullah | AI/ML Engineer & Software Engineer",
   description: "Portfolio of Md Amanullah, an AI/ML Engineer and Software Engineer focused on reliable AI systems, LLM evaluation and full-stack delivery.",
   metadataBase: new URL("https://mdamanullah.dev"),
-  openGraph: { title: "Md Amanullah | AI/ML Engineer & Software Engineer", description: "Building reliable systems for the intelligence layer.", type: "website" },
+ openGraph: {
+  title: "Md Amanullah | AI/ML & Software Engineer",
+  description: "Building intelligent, scalable, and reliable software systems powered by AI.",
+  type: "website",
+},
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
