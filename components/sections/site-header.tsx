@@ -14,7 +14,7 @@ export function SiteHeader() {
   useEffect(() => { document.documentElement.dataset.theme = darkMode ? "dark" : "light"; }, [darkMode]);
 
   return <header className="site-header">
-    <a className="brand" href="#top" aria-label="Md Amanullah home"><span className="brand-mark">MA</span><span>Md Amanullah</span></a>
+    <a className="brand" href="#top" aria-label="Md Amanullah home"><span className="brand-mark">MA</span><span> Md Amanullah </span></a>
     <nav className={`site-nav ${menuOpen ? "is-open" : ""}`} aria-label="Primary navigation">
       {navItems.map(([label, href]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>)}
     </nav>
